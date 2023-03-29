@@ -27,21 +27,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="packager",
-    version='1.0.0',
-    packages=find_packages(),
-    entry_points={
-        'console_scripts': [
-            'packager = packager.tools.packager:main',
-            'afu_json_mgr = packager.tools.afu_json_mgr:main',
-        ]
-    },
-    install_requires=['jsonschema>=2.3.0'],
-    description="packager provides Python classes for creating"
-                " Green BitStreams (GBS)",
-    license="BSD3",
-    keywords="OPAE accelerator GBS AFU",
     data_files=[('share/opae/packager', ['README']),
                ],
-    url="https://opae.github.io",
     include_package_data=True,
 )

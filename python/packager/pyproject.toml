@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "packager"
+version = "1.0.1"
+description = "packager provides Python classes for creating Green BitStreams (GBS)"
+readme = "README"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.4"
+
+dependencies = [
+  "jsonschema>=2.3.0",
+]
+
+[project.scripts]
+packager = "packager.tools.packager:main"
+afu_json_mgr = "packager.tools.afu_json_mgr:main"
+
+[project.urls]
+Homepage = "https://opae.github.io"
