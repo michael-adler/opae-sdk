@@ -27,6 +27,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="packager",
+    packages=find_packages(),
     data_files=[('share/opae/packager', ['README']),
                ],
     include_package_data=True,

@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+ 
+[project]
+name = "pacsign"
+version = "1.0.8"
+description = "pacsign provides Python classes for interfacing with the OPAE PACSign tool"
+readme = "PACSign.md"
+license = {text = "BSD-3-Clause"}
+requires-python = ">=3.6"
+ 
+[project.scripts]
+PACSign = "pacsign.__main__:main"
+ 
+[project.urls]
+Homepage = "https://opae.github.io"
